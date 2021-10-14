@@ -17,7 +17,7 @@ def _watch(bot: Bot, update, isZip=False, isLeech=False):
     try:
         link = message_args[1]
     except IndexError:
-        msg = f"/{BotCommands.WatchCommand} [youtube-dl supported link] [quality] |[CustomName] to mirror with youtube-dl.\n\n"
+        msg = f"/{BotCommands.WatchCommand} [yt-dlp supported link] [quality] |[CustomName] to mirror with yt-dlp.\n\n"
         msg += "<b>Note: Quality and custom name are optional</b>\n\nExample of quality: audio, 144, 240, 360, 480, 720, 1080, 2160."
         msg += "\n\nIf you want to use custom filename, enter it after |"
         msg += f"\n\nExample:\n/{BotCommands.WatchCommand} https://youtu.be/Pk_TthHfLeE 720 |video.mp4\n\n"
